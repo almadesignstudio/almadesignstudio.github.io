@@ -62,3 +62,17 @@ h1, h2, h3, h4, h5, h6,
 #colorlib-aside #colorlib-main-menu ul li a:hover:after {
   color: #1E90FF !important;
 }
+
+/* Sidebar - menu principale: indice bianco */
+#colorlib-aside #colorlib-main-menu ul li a {
+  color: #ffffff !important;      /* testo bianco */
+}
+
+#colorlib-aside #colorlib-main-menu ul li a:hover,
+#colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
+  color: #ffffff !important;      /* hover e voce attiva bianca */
+}
+
+#colorlib-aside #colorlib-main-menu ul li a:after {
+  background-color: #ffffff !important;  /* barra sotto voci attive bianca */
+}
