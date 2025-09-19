@@ -1,16 +1,16 @@
 /* =========================
    CUSTOMIZZAZIONI TEMPLATE
-   Solo Instagram + colore personalizzato
+   Solo colore azzurro
    ========================= */
 
 /* Link generali della pagina */
 a {
-  color: #1E90FF !important;      /* colore normale personalizzato */
+  color: #1E90FF !important;      /* colore normale */
   transition: 0.3s;
 }
 
 a:hover, a:focus {
-  color: #104E8B !important;      /* colore hover azzurro scuro */
+  color: #1C86EE !important;      /* colore hover leggermente più scuro */
   text-decoration: none;
 }
 
@@ -19,14 +19,14 @@ a:hover, a:focus {
   display: none !important;
 }
 
-/* Mostra solo Instagram */
+/* Mostra solo Instagram con azzurro */
 #colorlib-aside .colorlib-footer ul li a.instagram {
   display: inline-block !important;
   color: #1E90FF !important;
 }
 
 #colorlib-aside .colorlib-footer ul li a.instagram:hover {
-  color: #104E8B !important;
+  color: #1C86EE !important;
 }
 
 /* Pulsanti principali */
@@ -39,8 +39,8 @@ a:hover, a:focus {
 
 .btn-primary:hover,
 .btn-primary.btn-outline:hover {
-  background: #104E8B !important;
-  border-color: #104E8B !important;
+  background: #1C86EE !important;
+  border-color: #1C86EE !important;
   color: #fff !important;
 }
 
@@ -50,16 +50,15 @@ a:hover, a:focus {
 }
 
 .colorlib-social li a:hover {
-  color: #104E8B !important;
+  color: #1C86EE !important;
 }
 
-/* Titoli sezioni Esperienza, Approccio, Competenze */
-.colorlib-feature .colorlib-text h3 {
-  color: #1E90FF !important; /* il tuo azzurro */
-}
-
-/* Se ci sono varianti grandi o piccole */
+/* Titoli e elementi prima gialli/rossi */
+h1, h2, h3, h4, h5, h6,
+.colorlib-feature .colorlib-text h3,
 .colorlib-feature-lg .colorlib-text h3,
-.colorlib-feature-sm .colorlib-text h3 {
+.colorlib-feature-sm .colorlib-text h3,
+#colorlib-aside #colorlib-main-menu ul li.colorlib-active a,
+#colorlib-aside #colorlib-main-menu ul li a:hover:after {
   color: #1E90FF !important;
 }
