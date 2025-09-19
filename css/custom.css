@@ -3,12 +3,6 @@
    Solo colore azzurro
    ========================= */
 
-/* Link generali della pagina */
-a {
-  color: #1E90FF !important;      /* colore normale */
-  transition: 0.3s;
-}
-
 a:hover, a:focus {
   color: #1C86EE !important;      /* colore hover leggermente più scuro */
   text-decoration: none;
