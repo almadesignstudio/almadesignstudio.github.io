@@ -52,3 +52,14 @@ a:hover, a:focus {
 .colorlib-social li a:hover {
   color: #104E8B !important;
 }
+
+/* Titoli sezioni Esperienza, Approccio, Competenze */
+.colorlib-feature .colorlib-text h3 {
+  color: #1E90FF !important; /* il tuo azzurro */
+}
+
+/* Se ci sono varianti grandi o piccole */
+.colorlib-feature-lg .colorlib-text h3,
+.colorlib-feature-sm .colorlib-text h3 {
+  color: #1E90FF !important;
+}
