@@ -1,0 +1,54 @@
+/* =========================
+   CUSTOMIZZAZIONI TEMPLATE
+   Solo Instagram + colore personalizzato
+   ========================= */
+
+/* Link generali della pagina */
+a {
+  color: #E4405F !important;      /* colore normale Instagram */
+  transition: 0.3s;
+}
+
+a:hover, a:focus {
+  color: #C13584 !important;      /* colore hover Instagram */
+  text-decoration: none;
+}
+
+/* Footer: nascondi tutti i social */
+#colorlib-aside .colorlib-footer ul li a {
+  display: none !important;
+}
+
+/* Mostra solo Instagram */
+#colorlib-aside .colorlib-footer ul li a.instagram {
+  display: inline-block !important;
+  color: #E4405F !important;
+}
+
+#colorlib-aside .colorlib-footer ul li a.instagram:hover {
+  color: #C13584 !important;
+}
+
+/* Pulsanti principali */
+.btn-primary,
+.btn-primary.btn-outline {
+  background: #E4405F !important;
+  border-color: #E4405F !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary.btn-outline:hover {
+  background: #C13584 !important;
+  border-color: #C13584 !important;
+  color: #fff !important;
+}
+
+/* Hover su icone social in altre sezioni */
+.colorlib-social li a {
+  color: #E4405F !important;
+}
+
+.colorlib-social li a:hover {
+  color: #C13584 !important;
+}
