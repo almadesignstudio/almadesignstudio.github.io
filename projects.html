@@ -1,53 +1,112 @@
-<!DOCTYPE html>
-<html lang="it">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Balay Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
+<div id="colorlib-page">
+    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+        <h1 id="colorlib-logo"><a href="index.html">Balay</a></h1>
+        <nav id="colorlib-main-menu" role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Chi sono</a></li>
-                <li><a href="projects.html">Portfolio</a></li>
-                <li><a href="contact.html">Contatti</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="colorlib-active"><a href="projects.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        <div class="colorlib-footer">
+            <p><small>&copy;<script>document.write(new Date().getFullYear());</script> Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small></p>
+            <ul>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+            </ul>
+        </div>
+    </aside>
 
-    <main>
-        <section>
-            <h2>I miei progetti</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <img src="images/progetto1.jpg" alt="Progetto 1" class="lightbox">
-                    <p>Ristrutturazione appartamento moderno</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/progetto2.jpg" alt="Progetto 2" class="lightbox">
-                    <p>Ufficio open space elegante</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/progetto3.jpg" alt="Progetto 3" class="lightbox">
-                    <p>Casa residenziale minimalista</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/progetto4.jpg" alt="Progetto 4" class="lightbox">
-                    <p>Ristrutturazione cucina moderna</p>
+    <div id="colorlib-main">
+        <div class="colorlib-work colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Portfolio</span>
+                    <h2 class="colorlib-heading">I miei progetti</h2>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-6 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="project" style="background-image: url(images/progetto1.jpg);">
+                        <div class="desc">
+                            <h3>Ristrutturazione appartamento moderno</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+                    <div class="project" style="background-image: url(images/progetto2.jpg);">
+                        <div class="desc">
+                            <h3>Ufficio open space elegante</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="project" style="background-image: url(images/progetto3.jpg);">
+                        <div class="desc">
+                            <h3>Casa residenziale minimalista</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+                    <div class="project" style="background-image: url(images/progetto4.jpg);">
+                        <div class="desc">
+                            <h3>Ristrutturazione cucina moderna</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Il tuo Nome - Tutti i diritti riservati</p>
-    </footer>
+        <div id="get-in-touch" class="colorlib-bg-color">
+            <div class="colorlib-narrow-content">
+                <div class="row">
+                    <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                        <h2>Get in Touch!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                        <p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p><a href="contact.html" class="btn btn-primary btn-learn">Contact me!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Collegamento al JavaScript -->
-    <script src="assets/script.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/sticky-kit.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
