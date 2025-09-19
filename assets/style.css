@@ -9,21 +9,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333333;
+    color: #333;
     background-color: #fdfdfd;
 }
 
 /* Header e navigazione */
-header {
-    background-color: #3498db; /* header azzurro */
+header, .colorlib-aside {
+    background-color: #ffffff;
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-header h1 {
+header h1, #colorlib-logo {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #ffffff; /* titolo bianco */
 }
 
 nav ul {
@@ -34,24 +33,24 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* link bianco sull'header azzurro */
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #5dade2; /* hover azzurro chiaro */
+    color: #3498db !important; /* Azzurro */
 }
 
 /* Main content */
-main {
+main, #colorlib-main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
 /* Sezioni principali */
-section {
+section, .colorlib-about, .colorlib-services, .colorlib-contact {
     margin-bottom: 40px;
 }
 
@@ -65,7 +64,7 @@ section {
 .project-item {
     border: 1px solid #ddd;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -80,6 +79,11 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.project-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 /* Form contatti */
 form input, form textarea {
     width: 100%;
@@ -89,24 +93,32 @@ form input, form textarea {
     border-radius: 5px;
 }
 
-form input[type="submit"] {
-    background-color: #3498db; /* pulsante azzurro */
+form input[type="submit"], .btn-primary {
+    background-color: #3498db !important;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-form input[type="submit"]:hover {
-    background-color: #5dade2; /* hover azzurro chiaro */
+form input[type="submit"]:hover, .btn-primary:hover {
+    background-color: #2980b9 !important;
 }
 
 /* Footer */
-footer {
+footer, .colorlib-footer {
     background-color: #f5f5f5;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ddd;
+}
+
+.colorlib-footer ul li a {
+    color: #3498db !important;
+}
+
+.colorlib-footer ul li a:hover {
+    color: #2980b9 !important;
 }
 
 /* Responsive immagini */
@@ -116,9 +128,28 @@ img {
 }
 
 /* Titoli */
-h2 {
+h2, .colorlib-heading {
     margin-bottom: 15px;
-    color: #3498db; /* titolo azzurro principale */
+    color: #3498db !important;
+}
+
+h3 {
+    color: #3498db !important;
+}
+
+/* Contatori */
+.colorlib-counter-label, .colorlib-counter {
+    color: #3498db !important;
+}
+
+/* Steps box */
+.steps {
+    border: 1px solid #3498db;
+}
+
+.steps.active, .steps:hover {
+    background-color: #3498db;
+    color: #fff;
 }
 
 /* Media query per schermi piccoli (smartphone) */
@@ -128,11 +159,11 @@ h2 {
         gap: 10px;
     }
 
-    header h1 {
+    header h1, #colorlib-logo {
         font-size: 1.5rem;
     }
 
-    main {
+    main, #colorlib-main {
         padding: 20px;
     }
 
@@ -146,9 +177,4 @@ h2 {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-.project-item:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
