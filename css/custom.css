@@ -5,12 +5,12 @@
 
 /* Link generali della pagina */
 a {
-  color: #E4405F !important;      /* colore normale Instagram */
+  color: #1E90FF !important;      /* colore normale personalizzato */
   transition: 0.3s;
 }
 
 a:hover, a:focus {
-  color: #C13584 !important;      /* colore hover Instagram */
+  color: #104E8B !important;      /* colore hover azzurro scuro */
   text-decoration: none;
 }
 
@@ -22,33 +22,33 @@ a:hover, a:focus {
 /* Mostra solo Instagram */
 #colorlib-aside .colorlib-footer ul li a.instagram {
   display: inline-block !important;
-  color: #E4405F !important;
+  color: #1E90FF !important;
 }
 
 #colorlib-aside .colorlib-footer ul li a.instagram:hover {
-  color: #C13584 !important;
+  color: #104E8B !important;
 }
 
 /* Pulsanti principali */
 .btn-primary,
 .btn-primary.btn-outline {
-  background: #E4405F !important;
-  border-color: #E4405F !important;
+  background: #1E90FF !important;
+  border-color: #1E90FF !important;
   color: #fff !important;
 }
 
 .btn-primary:hover,
 .btn-primary.btn-outline:hover {
-  background: #C13584 !important;
-  border-color: #C13584 !important;
+  background: #104E8B !important;
+  border-color: #104E8B !important;
   color: #fff !important;
 }
 
 /* Hover su icone social in altre sezioni */
 .colorlib-social li a {
-  color: #E4405F !important;
+  color: #1E90FF !important;
 }
 
 .colorlib-social li a:hover {
-  color: #C13584 !important;
+  color: #104E8B !important;
 }
