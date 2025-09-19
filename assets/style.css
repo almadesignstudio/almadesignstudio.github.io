@@ -14,13 +14,13 @@ body {
 }
 
 /* Header e navigazione */
-header, .colorlib-aside {
+header {
     background-color: #ffffff;
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-header h1, #colorlib-logo {
+header h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -33,24 +33,24 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #007BFF; /* azzurro */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #3498db !important; /* Azzurro */
+    color: #0056b3; /* azzurro scuro al passaggio */
 }
 
 /* Main content */
-main, #colorlib-main {
+main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
 /* Sezioni principali */
-section, .colorlib-about, .colorlib-services, .colorlib-contact {
+section {
     margin-bottom: 40px;
 }
 
@@ -93,32 +93,57 @@ form input, form textarea {
     border-radius: 5px;
 }
 
-form input[type="submit"], .btn-primary {
-    background-color: #3498db !important;
+form input[type="submit"] {
+    background-color: #007BFF; /* azzurro */
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-form input[type="submit"]:hover, .btn-primary:hover {
-    background-color: #2980b9 !important;
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* azzurro scuro */
 }
 
 /* Footer */
-footer, .colorlib-footer {
+footer {
     background-color: #f5f5f5;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ddd;
 }
 
-.colorlib-footer ul li a {
-    color: #3498db !important;
+footer p {
+    color: #333;
 }
 
-.colorlib-footer ul li a:hover {
-    color: #2980b9 !important;
+footer a {
+    color: #007BFF; /* azzurro */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0056b3; /* azzurro scuro */
+}
+
+/* Social icons */
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: #007BFF; /* azzurro */
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #0056b3; /* azzurro scuro */
 }
 
 /* Responsive immagini */
@@ -128,28 +153,9 @@ img {
 }
 
 /* Titoli */
-h2, .colorlib-heading {
+h2 {
     margin-bottom: 15px;
-    color: #3498db !important;
-}
-
-h3 {
-    color: #3498db !important;
-}
-
-/* Contatori */
-.colorlib-counter-label, .colorlib-counter {
-    color: #3498db !important;
-}
-
-/* Steps box */
-.steps {
-    border: 1px solid #3498db;
-}
-
-.steps.active, .steps:hover {
-    background-color: #3498db;
-    color: #fff;
+    color: #007BFF; /* azzurro */
 }
 
 /* Media query per schermi piccoli (smartphone) */
@@ -159,11 +165,11 @@ h3 {
         gap: 10px;
     }
 
-    header h1, #colorlib-logo {
+    header h1 {
         font-size: 1.5rem;
     }
 
-    main, #colorlib-main {
+    main {
         padding: 20px;
     }
 
