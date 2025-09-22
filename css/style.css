@@ -599,7 +599,7 @@ body.offcanvas {
     .colorlib-feature .colorlib-icon i {
       display: table-cell;
       vertical-align: middle;
-      color: #1E90FF;
+      color: #000 !important;
       font-size: 60px;
       height: 100px; }
       @media screen and (max-width: 1200px) {
