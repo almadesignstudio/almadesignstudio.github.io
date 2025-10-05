@@ -1259,3 +1259,42 @@ body.offcanvas {
   display: inline-block;
 }
 
+
+/* contenitore .project-img: altezza fissa uguale per tutte le card */
+.project-img {
+  position: relative;
+  height: 300px;               /* regola l'altezza che vuoi per tutte */
+  overflow: hidden;
+  display: flex;
+  align-items: center;         /* centra verticalmente l'immagine */
+  justify-content: center;     /* centra orizzontalmente l'immagine */
+  background-color: transparent; /* o usa il colore della pagina (es. #fff) */
+  margin-bottom: 30px;
+}
+
+/* l'immagine mantiene le proporzioni: occupa tutta l'altezza, larghezza auto */
+.project-img img {
+  height: 100%;
+  width: auto;
+  display: block;
+  max-width: none; /* evita che venga forzata la larghezza */
+}
+
+/* descrizione sovrapposta */
+.project-img .desc {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 2;
+}
+
+.project-img .desc h3 {
+  color: #fff;      /* testo bianco sopra immagine */
+  margin: 0;
+  /* puoi aggiungere background semitrasparente per leggibilità */
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.4);
+  display: inline-block;
+}
+
+
