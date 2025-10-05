@@ -1272,29 +1272,57 @@ body.offcanvas {
   margin-bottom: 30px;
 }
 
-/* l'immagine mantiene le proporzioni: occupa tutta l'altezza, larghezza auto */
-.project-img img {
+/* .project1: nuova versione per immagini proporzionali */
+.project1 {
+  position: relative;
+  height: 300px;             /* altezza fissa comune (modifica se vuoi) */
+  overflow: hidden;
+  display: flex;
+  align-items: center;       /* centra verticalmente l'immagine */
+  justify-content: center;   /* centra orizzontalmente l'immagine */
+  background-color: #ffffff; /* colore pagina -> evita "bordi neri" */
+  margin-bottom: 30px;
+}
+
+/* immagine interna mantiene proporzioni: altezza piena, larghezza auto */
+.project1 img {
   height: 100%;
   width: auto;
   display: block;
-  max-width: none; /* evita che venga forzata la larghezza */
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* descrizione sovrapposta */
-.project-img .desc {
+.project1 .desc {
   position: absolute;
   left: 15px;
   bottom: 15px;
   z-index: 2;
+  pointer-events: none; /* evita che blocchi click sull'immagine */
 }
 
-.project-img .desc h3 {
-  color: #fff;      /* testo bianco sopra immagine */
+.project1 .desc h3 {
+  color: #ffffff;
   margin: 0;
-  /* puoi aggiungere background semitrasparente per leggibilità */
   padding: 6px 10px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.45); /* sfondo semitrasparente per leggibilità */
   display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+/* effetto hover: Schiarisce leggermente l'immagine e aumenta l'opacità del box */
+.project1:hover .desc h3 {
+  background: rgba(0,0,0,0.6);
+}
+
+/* responsive: su schermi piccoli le card sono più basse e le immagini si adattano */
+@media (max-width: 768px) {
+  .project1 { height: 220px; }
+  .project1 .desc h3 { font-size: 14px; padding: 5px 8px; }
+}
+
 
 
