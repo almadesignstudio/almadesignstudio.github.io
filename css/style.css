@@ -706,14 +706,15 @@ body.offcanvas {
       margin-top: 2em; } }
 
 .project {
-  background-size: cover;
+  background-size: contain; /* mostra tutta l'immagine */
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
-  width: 100%;
-  display: block;
-  margin-bottom: 30px; }
+  height: 300px; /* altezza uguale per tutte */
+  width: auto; /* lascia che la larghezza si adatti */
+  display: inline-block; /* affianca le immagini */
+  margin: 10px; /* spazio tra una e l’altra */
+}
   .project .desc {
     position: absolute;
     top: 10px;
