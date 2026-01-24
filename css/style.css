@@ -1259,4 +1259,10 @@ body.offcanvas {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+    .project .desc {
+        background: none !important;  /* rimuove overlay */
+    }
+}
+
 
